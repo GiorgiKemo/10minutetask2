@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Puter.js Habit Tracker App
+
+A simple single-page habit tracker demo built with Next.js, shadcn/ui, Tailwind CSS, Lucide Icons, and Puter.js.
+
+Suggested GitHub repository name: `Puter.js Habit Tracker App`
+
+## Features
+
+- Weekly habit grid with daily completion toggles
+- Today summary, progress ring, and streak list
+- Add-habit dialog for quick demo data entry
+- Local browser persistence
+- Puter cloud sync through Puter.js KV storage
+- Responsive app-like layout for desktop and mobile
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` starts the local development server
+- `npm run build` builds the app for production
+- `npm run lint` runs ESLint
 
-## Learn More
+## Puter.js
 
-To learn more about Next.js, take a look at the following resources:
+This app is built with Puter.js using the `@heyputer/puter.js` package. The demo uses Puter Auth for sign-in and Puter KV for saving habit tracker data to the user's Puter account.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Puter.js documentation: [https://docs.puter.com](https://docs.puter.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
